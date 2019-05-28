@@ -1,0 +1,100 @@
+body {
+  background: forestgreen;
+  text-align: center
+}
+
+.taiji {
+  margin-left: auto;
+  margin-right: auto;
+  height: 200px;
+  width: 200px;
+  animation-duration: 3s;
+  animation-name: yinyang;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes yinyang {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+@-webkit-keyframes yinyang {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(-360deg);
+  }
+}
+
+@-moz-keyframes yinyang {
+  0% {
+    -moz-transform: rotate(0deg);
+  }
+
+  100% {
+    -moz-transform: rotate(-360deg);
+  }
+}
+
+.taiji-1 {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: linear-gradient(to bottom, white 50%, black 50%);
+  position: relative;
+}
+
+.taiji-2 {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: black;
+  position: absolute;
+  top: 50px;
+  left: 0px;
+}
+
+.taiji-3 {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: white;
+  position: absolute;
+  top: 50px;
+  right: 0px;
+}
+
+.taiji-4 {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: white;
+  position: absolute;
+  top: 100px;
+  left: 40px;
+}
+
+.taiji-5 {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: black;
+  position: absolute;
+  top: 100px;
+  right: 40px;
+}
+
+p {
+  font-weight: bold;
+  font-family: serif;
+  font-size: 30px;
+}
+
